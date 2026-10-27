@@ -1,0 +1,12 @@
+services:
+  cowrie:
+    image: cowrie/cowrie:latest
+    container_name: cowrie
+    ports:
+      - "2222:2222"
+    volumes:
+      - cowrie-var:/cowrie/cowrie-git/var
+    restart: unless-stopped
+
+volumes:
+  cowrie-var:

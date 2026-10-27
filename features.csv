@@ -1,0 +1,249 @@
+session,n_commands,n_unique,duration_s,first_cmd_delay,mean_gap,std_gap,max_gap,n_info,n_fs,n_sensitive,login_fail,cmd_seq,label
+ca861e6febb3,4,4,6.196,1.006686,0.8967343333333334,0.3637144740388171,1.3147090000000001,2,2,0,0,whoami ; uname -a ; cat /etc/passwd ; ls,recon
+0db456b9e945,4,4,7.317,1.011883,1.3970443333333333,0.11495052363662088,1.492706,2,2,0,0,whoami ; uname -a ; cat /etc/passwd ; ls,recon
+c62ad6500eb2,4,4,7.669,1.08574,1.628878,0.26340175286622525,1.841677,2,2,0,0,whoami ; uname -a ; cat /etc/passwd ; ls,recon
+44204189c123,5,5,7.972,1.040838,1.4416435,0.4484375757869391,1.8582610000000002,0,5,0,0,pwd ; cd /tmp ; ls -la ; cat /etc/hostname ; ls /var/log,file_explore
+406cbe2025f0,5,5,7.458,1.019006,1.21351325,0.37678069675464626,1.652096,0,5,0,0,pwd ; cd /tmp ; ls -la ; cat /etc/hostname ; ls /var/log,file_explore
+98cbad3a42fe,5,5,7.225,1.005063,1.187842,0.5592466982337342,1.769238,0,5,0,0,pwd ; cd /tmp ; ls -la ; cat /etc/hostname ; ls /var/log,file_explore
+26e80a6501e8,4,4,6.892,1.004105,1.2896693333333333,0.3677098256320238,1.670887,2,2,2,0,ls ~/.ssh ; cat /etc/shadow ; history ; env,credential_hunt
+528bd658ff74,4,4,6.085,1.009912,1.2374386666666666,0.5004239573924627,1.811869,2,2,2,0,ls ~/.ssh ; cat /etc/shadow ; history ; env,credential_hunt
+cd7f45fbcf79,4,4,6.734,1.012022,1.0580100000000001,0.1791119576019424,1.189584,2,2,2,0,ls ~/.ssh ; cat /etc/shadow ; history ; env,credential_hunt
+7b015e14bac5,4,4,7.258,1.012521,1.3414713333333335,0.5602318849997144,1.924646,1,2,3,0,crontab -l ; ls /etc/cron.d ; cat /etc/rc.local ; id,persistence_probe
+51c12ff956c3,4,4,6.468,1.008325,1.2918740000000002,0.10172236480243672,1.397949,1,2,3,0,crontab -l ; ls /etc/cron.d ; cat /etc/rc.local ; id,persistence_probe
+14846866d107,4,4,7.298,1.008976,1.4336323333333334,0.678437537714662,1.881217,1,2,3,0,crontab -l ; ls /etc/cron.d ; cat /etc/rc.local ; id,persistence_probe
+a111325e0528,8,8,11.37,1.021146,1.1667201428571428,0.24857830081380033,1.524473,4,4,0,0,hostname ; id ; cat /etc/passwd ; whoami ; uname -r ; ls ; cat /etc/os-release ; pwd,recon
+24a1763f285c,7,7,9.97,1.010392,1.2049876666666666,0.171456128532831,1.392596,4,3,0,0,uname -r ; cat /etc/passwd ; whoami ; cat /etc/os-release ; hostname ; ls ; id,recon
+435dd2f0e697,7,7,4.627,1.004419,0.4252506666666666,0.0855310751918077,0.567394,0,2,0,0,w ; df -h ; ps aux ; cat /proc/cpuinfo ; uptime ; cat /proc/meminfo ; free -m,sysinfo_deep
+f1f7c48ed2bc,4,4,3.753,1.009015,0.57002,0.10404987816907811,0.636657,1,3,1,0,cat /etc/passwd ; cat ~/.bash_history ; cat /etc/shadow ; env,credential_hunt
+c686c032525d,6,6,8.526,1.021327,1.2040838,0.2640503395049891,1.513555,0,2,0,0,cat /proc/meminfo ; uptime ; free -m ; df -h ; ps aux ; cat /proc/cpuinfo,sysinfo_deep
+6b7c3b272363,6,6,16.954,1.022708,2.5001568,0.1724012882179249,2.666201,0,2,0,0,ps aux ; cat /proc/meminfo ; lscpu ; w ; cat /proc/cpuinfo ; df -h,sysinfo_deep
+90688e1452b7,7,7,4.935,1.021792,0.482254,0.08074732292280655,0.583434,1,5,4,0,cat /etc/crontab ; cat /etc/rc.local ; ls /etc/cron.d ; ls /etc/init.d ; id ; crontab -l ; ls /etc/systemd/system,persistence_probe
+a68d6e1b0442,5,5,6.937,1.012374,1.1078305,0.1571308176276485,1.195316,3,2,0,0,uname -a ; ls ; uname -r ; pwd ; id,recon
+e7c038ef1f55,8,8,18.432,1.012212,2.045565,0.5015959333862933,2.761064,0,8,0,0,ls ; cd /tmp ; ls /var/log ; cd /var/log ; ls -la ; cd /home ; ls /etc ; pwd,file_explore
+b811437aea8d,4,4,6.24,1.025059,0.9947446666666666,0.20315660363456883,1.229075,0,4,0,0,cd /tmp ; cd /var/log ; ls ; ls /home,file_explore
+a40c802c24b4,4,4,8.858,1.015049,1.8590100000000003,0.15279555332535036,1.992296,0,2,0,0,cat /etc/resolv.conf ; cat /etc/hosts ; ip a ; ifconfig,network_probe
+5d5a743f045a,7,7,9.838,1.024839,1.1820751666666667,0.18888198190025082,1.556292,1,5,4,0,id ; ls /etc/cron.d ; crontab -l ; ls /etc/systemd/system ; cat /etc/crontab ; ls /etc/init.d ; cat /etc/rc.local,persistence_probe
+18c79079eaf2,7,7,5.097,1.009895,0.48186466666666666,0.1282320322550753,0.631129,1,5,4,0,id ; crontab -l ; ls /etc/systemd/system ; cat /etc/rc.local ; ls /etc/init.d ; ls /etc/cron.d ; cat /etc/crontab,persistence_probe
+b8e2b2b7d992,7,7,16.41,1.007796,2.195306,0.4627457862520198,2.97814,3,4,0,0,pwd ; cat /etc/passwd ; whoami ; hostname ; uname -a ; ls ; cat /etc/os-release,recon
+371622a9ace9,8,8,11.461,1.011267,1.2094498571428574,0.30003292812924637,1.603821,0,2,0,0,ps aux ; w ; lscpu ; df -h ; free -m ; cat /proc/cpuinfo ; cat /proc/meminfo ; uptime,sysinfo_deep
+64ef4174957f,4,4,3.583,1.053991,0.43870799999999993,0.10211049210046927,0.519911,2,2,1,0,env ; ls /root ; history ; ls ~/.ssh,credential_hunt
+c5fa735345c0,7,7,19.422,1.008148,2.5603621666666663,0.41076984689064827,3.118298,0,7,0,0,ls /etc ; cd /var/log ; ls -la ; ls /var/log ; cd /home ; pwd ; ls,file_explore
+0a592c3c058c,5,5,7.989,1.027855,1.1898769999999999,0.250418224209022,1.425045,0,4,4,0,ls /etc/systemd/system ; cat /etc/rc.local ; crontab -l ; ls /etc/cron.d ; cat /etc/crontab,persistence_probe
+9b12361c701c,8,8,20.853,1.011922,2.490965142857143,0.4469127907960823,2.965546,2,6,2,0,ls ~/.ssh ; ls -la ~ ; cat /etc/shadow ; cat /etc/passwd ; ls /root ; env ; cat ~/.bash_history ; history,credential_hunt
+220d4aa3a5da,7,7,4.701,1.008081,0.4599411666666666,0.10410070060747269,0.611372,1,5,4,0,ls /etc/init.d ; cat /etc/crontab ; id ; cat /etc/rc.local ; ls /etc/cron.d ; crontab -l ; ls /etc/systemd/system,persistence_probe
+f1d91795feef,8,8,11.256,1.008745,1.143449285714286,0.22456523951976948,1.389557,2,6,2,0,cat ~/.bash_history ; env ; cat /etc/passwd ; cat /etc/shadow ; ls ~/.ssh ; history ; ls /root ; ls -la ~,credential_hunt
+26f04aec6799,5,5,8.046,1.007595,1.3787205,0.18445516014558477,1.528405,5,0,0,0,whoami ; uname -r ; uname -a ; id ; hostname,recon
+76a4aa4a40fd,7,7,10.562,1.023296,1.2034651666666667,0.2354775067478137,1.497804,0,7,0,0,pwd ; ls /etc ; cd /tmp ; ls /home ; ls ; cat /etc/hostname ; cd /home,file_explore
+12dd8d9cbc53,8,8,17.402,1.017674,1.9860509999999998,0.31476965804431234,2.403512,0,8,0,0,cat /etc/hostname ; ls -la ; ls /home ; ls /etc ; cd /var/log ; cd /tmp ; pwd ; ls /var/log,file_explore
+3d7b68591a55,5,5,3.831,1.009926,0.4552462500000001,0.07311259013045109,0.521777,2,3,1,0,cat /etc/passwd ; history ; ls -la ~ ; env ; ls ~/.ssh,credential_hunt
+8a1e828b92e9,5,5,3.642,1.009577,0.41163174999999996,0.07118287131220544,0.489984,3,2,0,0,uname -r ; id ; ls ; cat /etc/passwd ; uname -a,recon
+cb25b01757b9,6,6,4.618,1.011309,0.5352361999999999,0.07456878426124432,0.638624,1,5,2,0,ls -la ~ ; cat ~/.bash_history ; cat /etc/shadow ; ls ~/.ssh ; history ; ls /root,credential_hunt
+54ff81b71ed7,4,4,7.006,1.03138,1.3293253333333332,0.35276856899294945,1.604892,0,4,1,0,cat /etc/passwd ; ls /root ; cat /etc/shadow ; ls -la ~,credential_hunt
+80e7a6c85ae5,5,5,7.982,1.011392,1.2105385000000002,0.21774881010390545,1.5370650000000001,0,2,0,0,arp -a ; cat /etc/resolv.conf ; netstat -an ; ifconfig ; cat /etc/hosts,network_probe
+cbc48b0c01c6,5,5,7.839,1.010899,1.2509934999999999,0.30276960699570443,1.4784869999999999,0,5,0,0,ls -la ; ls /var/log ; cd /var/log ; cd /home ; cat /etc/hostname,file_explore
+acbeb66f35b1,7,7,17.094,1.011198,2.2776123333333333,0.5858125429103295,2.941896,0,2,0,0,ss -tulpn ; arp -a ; netstat -an ; cat /etc/resolv.conf ; ifconfig ; ip a ; cat /etc/hosts,network_probe
+269b369cd35c,5,5,4.072,1.016548,0.52144375,0.10837596672809889,0.601744,0,5,0,0,ls -la ; cd /home ; pwd ; ls /var/log ; cd /tmp,file_explore
+ffcc6d546082,8,8,5.266,1.018181,0.4490522857142857,0.0841886508141374,0.569587,0,2,0,0,lscpu ; uptime ; w ; free -m ; df -h ; ps aux ; cat /proc/cpuinfo ; cat /proc/meminfo,sysinfo_deep
+f31657db5d1f,4,4,11.409,1.028124,2.4254753333333334,0.5077008607451178,2.944688,2,2,0,0,cat /etc/os-release ; uname -r ; uname -a ; ls,recon
+642055ccfd81,8,8,11.802,1.013272,1.3288049999999998,0.18556677109331837,1.567727,0,8,0,0,cat /etc/hostname ; pwd ; cd /home ; ls /etc ; ls /var/log ; ls -la ; cd /tmp ; cd /var/log,file_explore
+a3282847ee65,6,6,4.22,1.012743,0.45622360000000006,0.10175927908697073,0.600719,0,1,0,0,lscpu ; df -h ; w ; ps aux ; uptime ; cat /proc/cpuinfo,sysinfo_deep
+5f3bb5907610,7,7,18.984,1.013401,2.4409845000000003,0.20462199028916708,2.707189,4,3,0,0,pwd ; hostname ; ls ; whoami ; uname -a ; cat /etc/os-release ; uname -r,recon
+cf6274f1bcf1,7,7,4.86,1.015727,0.4527658333333333,0.08280438320624497,0.566448,2,5,1,0,cat /etc/shadow ; cat ~/.bash_history ; cat /etc/passwd ; env ; ls /root ; ls -la ~ ; history,credential_hunt
+9adcf46e9ac0,6,6,8.474,1.021211,1.1625244,0.2336069266156292,1.5047869999999999,0,6,0,0,ls /home ; ls -la ; ls /var/log ; cat /etc/hostname ; cd /home ; ls /etc,file_explore
+c0a23cf98921,6,6,14.61,1.014852,2.034436,0.5055088909218115,2.861121,0,2,0,0,ps aux ; uptime ; df -h ; cat /proc/meminfo ; free -m ; cat /proc/cpuinfo,sysinfo_deep
+b4bdb7eb48be,7,7,10.65,1.022175,1.2643863333333334,0.22508115986076369,1.536141,0,2,0,0,arp -a ; netstat -an ; ip a ; cat /etc/hosts ; cat /etc/resolv.conf ; ss -tulpn ; ifconfig,network_probe
+6e5d72d80670,7,7,17.943,1.012497,2.4038498333333336,0.5146544124335928,2.898554,1,5,4,0,id ; ls /etc/init.d ; ls /etc/systemd/system ; crontab -l ; cat /etc/crontab ; ls /etc/cron.d ; cat /etc/rc.local,persistence_probe
+4c41efaf71cc,5,5,8.746,1.018517,1.42061275,0.10409779840251186,1.489621,0,0,0,0,lscpu ; df -h ; w ; free -m ; ps aux,sysinfo_deep
+309fd5bf4ac5,6,6,4.497,1.016113,0.45320119999999997,0.07421330219846037,0.536236,1,5,3,0,ls /etc/systemd/system ; cat /etc/crontab ; id ; cat /etc/rc.local ; ls /etc/cron.d ; ls /etc/init.d,persistence_probe
+36ade50cdffa,7,7,9.447,1.038799,1.1565993333333333,0.346309173650752,1.549301,5,2,0,0,id ; pwd ; hostname ; whoami ; uname -a ; uname -r ; cat /etc/os-release,recon
+d2d24414a8b0,4,4,10.688,1.017744,2.3875413333333335,0.39701550000514246,2.671122,0,4,0,0,pwd ; cat /etc/os-release ; ls ; cat /etc/passwd,recon
+0922a3f3cb08,4,4,11.04,1.012999,2.521709,0.3752791728526911,2.88769,3,1,0,0,cat /etc/os-release ; hostname ; uname -r ; uname -a,recon
+b44083e84842,7,7,10.711,1.016255,1.3006743333333333,0.23942046952227508,1.535271,4,3,0,0,id ; cat /etc/os-release ; whoami ; pwd ; cat /etc/passwd ; uname -a ; hostname,recon
+a36b2a5d6485,8,8,5.273,1.04976,0.47263242857142856,0.1143850684659164,0.648036,0,2,0,0,ps aux ; cat /proc/meminfo ; w ; df -h ; cat /proc/cpuinfo ; free -m ; lscpu ; uptime,sysinfo_deep
+0c88d00f9c2a,7,7,10.029,1.019511,1.2427216666666665,0.25204096573745044,1.553552,0,2,0,0,ss -tulpn ; arp -a ; ip a ; ifconfig ; cat /etc/resolv.conf ; netstat -an ; cat /etc/hosts,network_probe
+e442594d8442,6,6,14.879,1.017059,2.1710884,0.6645334442041272,2.9365769999999998,2,4,2,0,ls /root ; ls -la ~ ; ls ~/.ssh ; env ; history ; cat /etc/shadow,credential_hunt
+ba0718adf4ba,5,5,8.295,1.037193,1.2829795000000002,0.1647540846585196,1.481731,4,1,0,0,id ; whoami ; hostname ; ls ; uname -r,recon
+be196dd1bf48,6,6,7.682,1.026876,1.0449932,0.17711223503389034,1.255495,0,2,0,0,cat /etc/hosts ; arp -a ; cat /etc/resolv.conf ; ip a ; ss -tulpn ; ifconfig,network_probe
+17e0b21ac221,7,7,16.349,1.012766,2.1790659999999997,0.421798972470536,2.590388,0,2,0,0,ip a ; netstat -an ; ifconfig ; cat /etc/resolv.conf ; arp -a ; cat /etc/hosts ; ss -tulpn,network_probe
+9e6b2a4d6945,5,5,8.181,1.025912,1.35981675,0.19958255015636175,1.588233,0,1,0,0,cat /etc/resolv.conf ; ss -tulpn ; ip a ; netstat -an ; ifconfig,network_probe
+4b9377687559,6,6,9.32,1.014583,1.2571008000000001,0.18710765561889767,1.385518,0,2,0,0,ss -tulpn ; cat /etc/hosts ; arp -a ; ifconfig ; netstat -an ; cat /etc/resolv.conf,network_probe
+e6fe43b13661,5,5,7.951,1.025582,1.23130775,0.18574323167099072,1.378287,1,4,2,0,ls ~/.ssh ; ls -la ~ ; ls /root ; env ; cat /etc/shadow,credential_hunt
+b915b8423ebf,4,4,3.546,1.01426,0.5105303333333334,0.032301546160104076,0.543791,0,4,0,0,ls /home ; ls -la ; pwd ; cd /tmp,file_explore
+5174eb1b488e,6,6,8.345,1.025714,1.1498082,0.1474045917168119,1.305035,0,1,0,0,uptime ; cat /proc/cpuinfo ; lscpu ; free -m ; ps aux ; w,sysinfo_deep
+92f77d5d8b7a,5,5,7.177,1.021073,1.0609055,0.2909452723675022,1.482064,0,2,0,0,ifconfig ; cat /etc/resolv.conf ; cat /etc/hosts ; arp -a ; ip a,network_probe
+7fcb95d1aa35,4,4,10.384,1.01475,2.0726123333333333,0.5101905445442256,2.660559,0,1,0,0,cat /etc/resolv.conf ; ifconfig ; arp -a ; ip a,network_probe
+df4fcfb1aabf,5,5,14.574,1.026148,2.4832365000000003,0.20844778280183257,2.749548,1,3,3,0,ls /etc/cron.d ; id ; crontab -l ; ls /etc/systemd/system ; cat /etc/crontab,persistence_probe
+798c7bd6ed50,5,5,3.75,1.014012,0.41426075,0.07798279561704617,0.526399,0,5,0,0,pwd ; ls /var/log ; cd /home ; cat /etc/hostname ; cd /tmp,file_explore
+587b33a54a76,6,6,8.609,1.028765,1.0984383999999998,0.3005788797392458,1.5802399999999999,0,6,0,0,ls ; cat /etc/hostname ; ls /etc ; ls /var/log ; pwd ; ls /home,file_explore
+bfb076d15a54,7,7,16.244,1.03365,2.1165745,0.4679097426524694,2.771163,4,3,0,0,id ; cat /etc/passwd ; cat /etc/os-release ; pwd ; uname -a ; whoami ; uname -r,recon
+c7ca7a99c201,4,4,11.122,1.032503,2.348006,0.46499113115413276,2.822608,0,1,0,0,cat /proc/meminfo ; df -h ; free -m ; uptime,sysinfo_deep
+e1b2c28ef0e2,7,7,19.636,1.022485,2.5898298333333334,0.3139841097446918,2.919587,0,2,0,0,lscpu ; cat /proc/meminfo ; free -m ; df -h ; w ; cat /proc/cpuinfo ; ps aux,sysinfo_deep
+913206d84081,7,7,10.947,1.022129,1.383733,0.21861858517884528,1.573775,0,2,0,0,ifconfig ; ip a ; cat /etc/hosts ; netstat -an ; cat /etc/resolv.conf ; arp -a ; ss -tulpn,network_probe
+2075b61ec076,7,7,18.786,1.024594,2.4567460000000003,0.2813920129093929,2.755432,1,5,4,0,ls /etc/cron.d ; ls /etc/systemd/system ; ls /etc/init.d ; id ; cat /etc/rc.local ; crontab -l ; cat /etc/crontab,persistence_probe
+8d32f621114c,5,5,11.835,1.014953,2.1850075,0.4855999250717268,2.828278,1,3,3,0,crontab -l ; cat /etc/rc.local ; cat /etc/crontab ; id ; ls /etc/init.d,persistence_probe
+02174418c1fe,7,7,18.944,1.013945,2.3847595,0.35280340824813466,2.75268,0,2,0,0,uptime ; w ; df -h ; cat /proc/meminfo ; cat /proc/cpuinfo ; ps aux ; free -m,sysinfo_deep
+24720ce006ff,6,6,4.75,1.022712,0.5445656,0.043873986743855405,0.578306,0,6,0,0,ls /var/log ; ls -la ; ls /etc ; cd /var/log ; ls ; ls /home,file_explore
+0a35cad58c79,4,4,12.352,1.016975,2.597167666666667,0.2129626547668237,2.793873,0,4,1,0,cat /etc/shadow ; cat ~/.bash_history ; ls /root ; cat /etc/passwd,credential_hunt
+2e6be0777c90,7,7,19.048,1.01706,2.5559454999999995,0.5375988485325279,3.03299,1,5,4,0,ls /etc/systemd/system ; id ; cat /etc/rc.local ; crontab -l ; ls /etc/cron.d ; cat /etc/crontab ; ls /etc/init.d,persistence_probe
+5a935ce43091,7,7,4.869,1.032051,0.4562926666666667,0.11427478964612739,0.60427,0,2,0,0,netstat -an ; ip a ; ifconfig ; cat /etc/hosts ; cat /etc/resolv.conf ; ss -tulpn ; arp -a,network_probe
+240951bff857,7,7,17.599,1.016995,2.2931645,0.5205009401208608,2.864125,1,5,4,0,cat /etc/crontab ; ls /etc/init.d ; ls /etc/cron.d ; ls /etc/systemd/system ; cat /etc/rc.local ; crontab -l ; id,persistence_probe
+43fd22814f7a,5,5,15.214,1.021681,2.7532385,0.19965923398714444,2.990907,1,3,3,0,ls /etc/systemd/system ; crontab -l ; cat /etc/rc.local ; id ; ls /etc/cron.d,persistence_probe
+56543049fdd1,4,4,3.46,1.016902,0.39505966666666664,0.027116340319691613,0.419236,0,4,0,0,ls -la ; pwd ; ls /etc ; ls /var/log,file_explore
+39bce0cada71,7,7,16.224,1.013378,2.145786333333333,0.4680204702252527,2.6436770000000003,2,5,2,0,cat /etc/passwd ; history ; env ; ls ~/.ssh ; ls /root ; cat /etc/shadow ; cat ~/.bash_history,credential_hunt
+e1902ab6cb50,6,6,4.534,1.021604,0.5082796,0.12014322764226038,0.710128,1,4,3,0,ls /etc/init.d ; cat /etc/rc.local ; ls /etc/systemd/system ; crontab -l ; ls /etc/cron.d ; id,persistence_probe
+b2511f4031e3,8,8,19.183,1.013816,2.106767428571428,0.485876673118415,2.942432,5,3,0,0,ls ; uname -a ; cat /etc/os-release ; hostname ; uname -r ; pwd ; whoami ; id,recon
+cb65cd8cb19b,7,7,10.41,1.052345,1.2411208333333335,0.18684122641260592,1.535194,0,2,0,0,netstat -an ; ip a ; arp -a ; ifconfig ; cat /etc/hosts ; ss -tulpn ; cat /etc/resolv.conf,network_probe
+3a1ee6ab3a6d,8,8,4.757,1.008843,0.3740074285714286,0.05586893326604433,0.456102,0,2,0,0,w ; df -h ; cat /proc/meminfo ; cat /proc/cpuinfo ; uptime ; lscpu ; ps aux ; free -m,sysinfo_deep
+92ef634c0437,5,5,4.244,1.058834,0.45285624999999996,0.10937112060129647,0.544382,2,3,2,0,history ; env ; ls /root ; cat /etc/shadow ; ls ~/.ssh,credential_hunt
+4a056c71145a,8,8,12.434,1.071659,1.3642704285714284,0.21819002264223503,1.516822,2,6,2,0,cat /etc/passwd ; ls ~/.ssh ; history ; ls /root ; ls -la ~ ; cat /etc/shadow ; cat ~/.bash_history ; env,credential_hunt
+369b5ff930c8,7,7,10.379,1.013155,1.2755151666666666,0.21109941812180974,1.557957,0,2,0,0,arp -a ; ip a ; cat /etc/resolv.conf ; ifconfig ; ss -tulpn ; netstat -an ; cat /etc/hosts,network_probe
+841efc358167,4,4,3.547,1.023278,0.447123,0.12297170018748216,0.55706,0,4,0,0,ls /etc ; pwd ; cd /tmp ; ls /home,file_explore
+40de2b484163,7,7,17.985,1.021918,2.3282321666666665,0.4475786604267083,2.689206,0,2,0,0,cat /proc/cpuinfo ; lscpu ; ps aux ; w ; cat /proc/meminfo ; uptime ; df -h,sysinfo_deep
+7a70580e54d0,4,4,6.751,1.015435,1.2496183333333333,0.2744916428606404,1.438726,0,4,3,0,ls /etc/cron.d ; ls /etc/systemd/system ; cat /etc/rc.local ; cat /etc/crontab,persistence_probe
+de427ece17e5,8,8,19.019,1.013735,2.052983714285714,0.423685841617235,2.821759,2,6,2,0,cat ~/.bash_history ; ls ~/.ssh ; ls -la ~ ; cat /etc/passwd ; ls /root ; cat /etc/shadow ; history ; env,credential_hunt
+c7ec3892888d,6,6,16.482,1.018766,2.3962698,0.5622835993759734,2.957964,1,3,0,0,netstat -an ; arp -a ; cat /etc/resolv.conf ; whoami ; cat /etc/os-release ; ls,hard_mix_net
+fb41b4cc2239,6,6,4.286,1.009989,0.4595302,0.08844604978573095,0.565788,2,3,0,0,arp -a ; id ; cat /etc/passwd ; uname -a ; cat /etc/resolv.conf ; cat /etc/hosts,hard_mix_net
+b3aa2c7093bd,6,6,8.871,1.006498,1.2864128,0.18008359081465478,1.448671,0,5,0,0,cat /proc/meminfo ; ls ; ls /home ; free -m ; cat /proc/cpuinfo ; cat /etc/hostname,hard_mix_sys
+8cae288b4f07,6,6,14.948,1.009285,2.2279923999999998,0.4574253110763548,2.749143,0,4,0,0,ps aux ; cat /proc/meminfo ; pwd ; uptime ; cd /tmp ; cd /var/log,hard_mix_sys
+9e7f5e5d7c4b,6,6,8.661,1.015547,1.2121692,0.2469390689759318,1.602992,0,3,0,0,lscpu ; cd /var/log ; df -h ; ls -la ; uptime ; cd /tmp,hard_mix_sys
+cd8ebce57ef2,6,6,8.595,1.041843,1.147757,0.09039540031716223,1.304685,2,2,0,0,cat /etc/resolv.conf ; ss -tulpn ; pwd ; id ; whoami ; netstat -an,hard_mix_net
+e1133a610f4f,6,6,8.942,1.007783,1.165201,0.24573062754060598,1.449777,1,4,0,0,ip a ; whoami ; cat /etc/hosts ; cat /etc/resolv.conf ; pwd ; cat /etc/os-release,hard_mix_net
+6d8a6bab3c2a,6,6,4.3,1.025874,0.4575017999999999,0.08034776445365482,0.577193,0,3,0,0,ls /etc ; w ; uptime ; cd /home ; df -h ; cd /tmp,hard_mix_sys
+1b7309120c40,6,6,15.903,1.010285,2.36468,0.4161990321739108,2.842126,3,1,0,0,id ; cat /etc/resolv.conf ; uname -a ; arp -a ; ifconfig ; whoami,hard_mix_net
+1d2fcf21c2b4,6,6,4.561,1.007352,0.46169279999999996,0.07809632986703023,0.553055,0,4,0,0,cd /var/log ; ls /etc ; uptime ; cat /proc/cpuinfo ; cd /home ; w,hard_mix_sys
+ff161367e2db,6,6,13.793,1.03919,2.0783791999999996,0.3733561013465562,2.459024,0,3,0,0,free -m ; ls /var/log ; lscpu ; cat /etc/hostname ; cd /var/log ; w,hard_mix_sys
+70a42c159542,6,6,15.518,1.015088,2.3530124,0.588527170434212,2.968884,3,0,0,0,netstat -an ; uname -r ; arp -a ; hostname ; ip a ; id,hard_mix_net
+7f4e83f520fb,6,6,4.084,1.015756,0.4189704000000001,0.10216426966557342,0.545718,3,2,0,0,id ; whoami ; cat /etc/resolv.conf ; uname -a ; cat /etc/hosts ; ip a,hard_mix_net
+d93d4f5967f7,6,6,8.377,1.02097,1.1378898,0.283157832614957,1.526575,0,5,0,0,cat /proc/cpuinfo ; ls -la ; cat /proc/meminfo ; ls /etc ; cd /var/log ; uptime,hard_mix_sys
+3fa377875a69,6,6,9.253,1.009433,1.3059216,0.2651023990476133,1.5879590000000001,0,3,0,0,ls /home ; w ; cd /var/log ; cd /home ; ps aux ; lscpu,hard_mix_sys
+0a205dcc196c,6,6,14.587,1.015253,2.2160424,0.458259408213623,2.753212,2,2,0,0,cat /etc/hosts ; cat /etc/passwd ; ifconfig ; whoami ; arp -a ; id,hard_mix_net
+71417cf484f2,6,6,4.269,1.008283,0.4488808000000001,0.12071798495336143,0.622528,0,3,0,0,ls ; uptime ; cd /tmp ; cat /etc/hostname ; df -h ; lscpu,hard_mix_sys
+2edb0198daa0,6,6,4.232,1.013515,0.4470648,0.0824828577445035,0.534718,0,3,0,0,cd /home ; ls /etc ; ls ; lscpu ; ps aux ; uptime,hard_mix_sys
+d63434fbc778,6,6,4.374,1.006229,0.43520439999999994,0.07853895497649556,0.5486,1,3,0,0,cat /etc/hosts ; ifconfig ; cat /etc/os-release ; netstat -an ; cat /etc/passwd ; id,hard_mix_net
+ae5ea61f2947,6,6,8.715,1.050393,1.1581324,0.1930735923405891,1.491388,2,2,0,0,cat /etc/resolv.conf ; ss -tulpn ; hostname ; uname -r ; ip a ; ls,hard_mix_net
+2011d7fb7935,6,6,8.94,1.010127,1.2018157999999999,0.24999316514696954,1.583602,0,4,0,0,ls /etc ; cat /proc/cpuinfo ; free -m ; ls /var/log ; ps aux ; cat /etc/hostname,hard_mix_sys
+0bab9e2fd76e,6,6,14.791,1.013065,2.2299042,0.5632867552723035,2.848685,1,2,0,0,uname -a ; ifconfig ; ss -tulpn ; ls ; cat /etc/passwd ; netstat -an,hard_mix_net
+8fbd8661c405,6,6,8.038,1.008939,1.0748566,0.213871543754189,1.445552,0,3,0,0,ls /home ; free -m ; df -h ; cat /etc/hostname ; ls /var/log ; uptime,hard_mix_sys
+9f92a616e854,6,6,9.11,1.03076,1.2286629999999998,0.28670152527062004,1.631865,0,4,0,0,cat /proc/cpuinfo ; cat /etc/hostname ; df -h ; ps aux ; cd /tmp ; cd /home,hard_mix_sys
+da4ad525d0ff,6,6,14.118,1.047619,2.1924114,0.546384378598803,2.821307,0,3,0,0,uptime ; ls /etc ; w ; ls -la ; ps aux ; cat /etc/hostname,hard_mix_sys
+72042a5b93d7,6,6,9.007,1.021788,1.2229702,0.31315569317226216,1.520875,0,4,0,0,ls /home ; ls ; ps aux ; cat /proc/cpuinfo ; cd /var/log ; uptime,hard_mix_sys
+77ed237b0218,6,6,4.621,1.01408,0.4967423999999999,0.06455410982888696,0.576291,2,1,0,0,ip a ; cat /etc/passwd ; id ; ss -tulpn ; whoami ; arp -a,hard_mix_net
+6d092fc7f3d0,6,6,4.468,1.031913,0.4597214,0.09823256444682688,0.574472,2,3,0,0,whoami ; cat /etc/hosts ; arp -a ; hostname ; ls ; cat /etc/resolv.conf,hard_mix_net
+51fa356866e5,6,6,9.443,1.054315,1.3042764,0.2967542324218815,1.5857510000000001,1,2,0,0,arp -a ; cat /etc/os-release ; netstat -an ; id ; ss -tulpn ; ls,hard_mix_net
+dd1563e6ad8b,6,6,8.03,1.020768,1.0889458,0.19240358950835612,1.288933,3,1,0,0,hostname ; id ; uname -a ; arp -a ; cat /etc/resolv.conf ; ss -tulpn,hard_mix_net
+338a465e7bf6,5,5,3.893,1.007338,0.49386749999999996,0.05716772531478462,0.552842,1,2,2,0,ls /etc/systemd/system ; echo $SHELL ; cat /etc/rc.local ; crontab -l ; uname -m,var_persistence_probe
+f31fb41fc3d1,5,5,13.537,1.015868,2.55708925,0.2500506384866541,2.9272460000000002,2,3,0,0,ls /srv ; env ; cat ~/.bash_history ; history ; ls /mnt,var_credential_hunt
+e9b46fe86515,5,5,7.914,1.011008,1.1623225,0.2709559461234735,1.491427,2,2,2,0,ls /usr/bin ; ls /etc/cron.d ; crontab -l ; id ; uname -m,var_persistence_probe
+da2c13d312e5,5,5,12.368,1.105686,2.12897625,0.55538895419239,2.955228,3,1,0,0,ls /opt ; uname -a ; uname -r ; groups ; hostname,var_recon
+018865894c1a,4,4,6.985,1.012384,1.4313753333333334,0.18521497236004805,1.552753,0,3,0,0,ls /etc ; groups ; cd /tmp ; cat /etc/hostname,var_file_explore
+22512e049457,5,5,12.918,1.019974,1.97661275,0.38974192398934543,2.508423,0,5,0,0,cat /etc/hostname ; ls ; ls /srv ; ls /usr/bin ; pwd,var_file_explore
+6cd8b182e6a3,4,4,6.149,1.027569,1.1997653333333334,0.2611713344958311,1.383012,2,1,0,0,echo $SHELL ; ls /root ; env ; history,var_credential_hunt
+b082652055bb,5,5,3.8,1.007638,0.39684400000000003,0.05056432831552298,0.471398,1,3,0,0,ls /root ; ls /opt ; history ; groups ; ls -la ~,var_credential_hunt
+1d8550840947,4,4,6.587,1.025967,1.2742696666666669,0.1931792003615642,1.4954450000000001,0,4,2,0,ls /srv ; cat /etc/passwd ; cat /etc/shadow ; ls ~/.ssh,var_credential_hunt
+e1a5c008cf82,4,4,6.622,1.016585,1.3871966666666669,0.2189050447941604,1.521503,0,3,0,0,ls /home ; ls /etc ; cd /home ; echo $SHELL,var_file_explore
+400719222d70,5,5,4.006,1.01808,0.48163750000000005,0.059133707051618786,0.566509,0,3,0,0,cd /tmp ; ls ; date ; ls /home ; groups,var_file_explore
+fd171856d506,4,4,9.615,1.005937,2.067460333333333,0.7880751016301261,2.975893,0,4,0,0,ls ; ls -la ; cd /var/log ; cat /etc/group,var_file_explore
+78ddaf1c7448,5,5,7.07,1.007355,1.10922775,0.22411188486761846,1.372886,3,1,0,0,uname -r ; uname -a ; hostname ; who ; ls /mnt,var_recon
+f6be4ed85075,5,5,13.217,1.03891,2.1573462500000002,0.46684954227843406,2.720727,0,4,0,0,ls /var/log ; cd /var/log ; ls /home ; cat /etc/motd ; last,var_file_explore
+f5a50493394d,5,5,13.376,1.010304,2.2557265,0.4664725721622512,2.785024,2,2,0,0,cat /etc/os-release ; hostname ; uname -r ; ls /usr/bin ; groups,var_recon
+39732586deec,5,5,3.873,1.014948,0.4205105,0.0608839146710087,0.470569,1,4,0,0,uname -m ; ls /etc ; pwd ; cd /tmp ; ls /mnt,var_file_explore
+e7fb4bbe370b,5,5,13.903,1.017416,2.35950125,0.5403447461934988,2.660297,1,3,0,0,ls /etc/init.d ; id ; ls /etc/systemd/system ; echo $SHELL ; ls /mnt,var_persistence_probe
+1d84cfff1800,5,5,3.841,1.032783,0.435485,0.094118616079215,0.548952,1,3,0,0,cat /etc/passwd ; ls -la ~ ; last ; history ; ls /srv,var_credential_hunt
+a8d157309801,5,5,12.873,1.0320529999999999,2.242782,0.49132739067618314,2.775596,0,4,1,0,ls /etc/init.d ; cat /etc/motd ; ls /etc/cron.d ; ls /etc/systemd/system ; echo $SHELL,var_persistence_probe
+62c6a4413fc9,4,4,3.585,1.013311,0.4588406666666667,0.07768497565381181,0.541617,0,3,2,0,crontab -l ; ls /etc/systemd/system ; ls /etc/cron.d ; cat /etc/group,var_persistence_probe
+c9abc95e1f6e,4,4,5.923,1.011808,1.0492333333333332,0.3992279829650388,1.510213,2,1,0,0,cat /etc/passwd ; uname -a ; date ; hostname,var_recon
+41e798ae39bb,4,4,3.376,1.013803,0.47098533333333337,0.08164103491096456,0.536308,0,3,0,0,ls /var/log ; ls -la ; cd /home ; echo $SHELL,var_file_explore
+777ca519274a,5,5,15.321,1.00979,2.7295040000000004,0.33064786085905146,2.9905340000000002,3,2,0,0,whoami ; hostname ; ls /srv ; cat /etc/issue ; uname -r,var_recon
+a61f62f6c187,4,4,3.39,1.006795,0.4365853333333334,0.07347942151604989,0.501093,0,3,2,0,date ; cat /etc/rc.local ; cat /etc/crontab ; ls /etc/init.d,var_persistence_probe
+db69fb45f155,4,4,5.732,1.006984,1.102417,0.2814738927307469,1.419585,1,3,0,0,pwd ; cat /etc/group ; hostname ; cat /etc/passwd,var_recon
+5c8a0ab2c74e,4,4,3.082,1.019798,0.3806256666666667,0.10104299649819048,0.495547,0,3,1,0,cat /etc/passwd ; echo $SHELL ; cat /etc/shadow ; ls /root,var_credential_hunt
+de9551b75553,5,5,3.891,1.009579,0.47496900000000003,0.08424201310905778,0.583842,1,3,1,0,date ; cat ~/.bash_history ; cat /etc/shadow ; uname -m ; ls -la ~,var_credential_hunt
+8e2da4e29b5d,4,4,6.473,1.060475,1.1002253333333332,0.23029736965569828,1.274219,2,1,2,0,cat /etc/crontab ; uname -m ; id ; crontab -l,var_persistence_probe
+ea2474c4fb53,5,5,13.096,1.007848,2.1712357499999997,0.164960797691199,2.380474,1,2,0,0,cat /etc/passwd ; hostname ; groups ; pwd ; echo $SHELL,var_recon
+566a976d55b7,4,4,3.584,1.020588,0.5127046666666667,0.10471593370797652,0.591196,1,3,1,0,cat /etc/motd ; ls ~/.ssh ; cat ~/.bash_history ; env,var_credential_hunt
+efa1e83192a7,5,5,13.155,1.016104,2.3487612500000004,0.46568401866170656,2.898079,0,3,2,0,groups ; crontab -l ; ls /etc/init.d ; ls /mnt ; cat /etc/crontab,var_persistence_probe
+d07c3b59837f,4,4,11.563,1.013024,2.5929906666666667,0.3300402261881622,2.970017,2,1,0,0,hostname ; cat /etc/passwd ; date ; uname -a,var_recon
+b0736cd38cd9,6,6,9.418,1.006433,1.4042756,0.15113717043566746,1.5380120000000002,1,4,0,0,cat /etc/issue ; ls /mnt ; ls /root ; ls /srv ; echo $SHELL ; uname -m,sweep_credential_hunt_k5
+ba758190ce08,6,6,8.733,1.004873,1.1779471999999998,0.2784853573191955,1.469571,1,5,0,0,pwd ; ls /mnt ; uname -m ; cat /etc/motd ; cat /etc/issue ; ls /usr/bin,sweep_file_explore_k5
+17ac3ced0ab4,6,6,14.919,1.009751,2.0735673999999995,0.45150746151841165,2.6043,2,4,0,0,env ; ls /usr/bin ; cat /etc/passwd ; history ; ls /root ; cat ~/.bash_history,sweep_credential_hunt_k1
+6e2afded325b,6,6,16.054,1.009028,2.4043769999999998,0.5189098700126065,2.870581,0,3,0,0,last ; cat /etc/group ; echo $SHELL ; cat /etc/issue ; who ; ls /opt,sweep_persistence_probe_k6
+4fa35e6290d3,6,6,4.542,1.011108,0.4720094,0.07680747756110727,0.593366,1,5,3,0,id ; ls /etc/cron.d ; ls /etc/systemd/system ; cat /etc/crontab ; ls /etc/init.d ; cat /etc/rc.local,sweep_persistence_probe_k0
+d509ebec897a,6,6,15.294,1.023612,2.2412998,0.5304831754383921,2.921912,1,5,0,0,ls /mnt ; ls /usr/bin ; cat /etc/issue ; cat /etc/group ; uname -m ; ls /srv,sweep_file_explore_k6
+60ad9c83683f,6,6,7.73,1.007614,0.995086,0.1219001458694779,1.195207,0,4,0,0,ls -la ; cat /etc/motd ; echo $SHELL ; who ; cat /etc/group ; cd /tmp,sweep_file_explore_k4
+6d8184dc938f,6,6,3.965,1.022519,0.371549,0.05720400835605841,0.448583,0,4,0,0,ls ; ls /srv ; ls /usr/bin ; who ; groups ; cat /etc/passwd,sweep_recon_k4
+26b4251dc65e,6,6,9.311,1.008486,1.2650852,0.25581959524281955,1.520153,0,6,0,0,cd /tmp ; cd /home ; ls /home ; ls -la ; cd /var/log ; pwd,sweep_file_explore_k0
+c0a3854a52bf,6,6,15.849,1.014438,2.3880595999999996,0.5583629668023301,2.8826650000000003,1,4,1,0,ls ~/.ssh ; env ; last ; cat /etc/motd ; ls /mnt ; cat /etc/issue,sweep_credential_hunt_k4
+08ea10e732ff,6,6,4.009,1.021779,0.3883312,0.06935802659894527,0.456297,0,4,4,0,ls /etc/systemd/system ; ls /etc/cron.d ; cat /etc/rc.local ; cat /etc/crontab ; last ; crontab -l,sweep_persistence_probe_k1
+e8f9ceec5ad8,6,6,8.822,1.011832,1.1488331999999999,0.26236663127806475,1.5810629999999999,1,4,0,0,ls -la ~ ; echo $SHELL ; env ; cat ~/.bash_history ; ls /root ; cat /etc/passwd,sweep_credential_hunt_k1
+38793d272737,6,6,14.97,1.007818,2.08224,0.3175257530138304,2.578977,2,4,0,0,cat /etc/passwd ; uname -r ; whoami ; cat /etc/group ; pwd ; ls /opt,sweep_recon_k2
+abee0b9a3b96,6,6,15.288,1.019671,2.3485532,0.3573306631982483,2.73651,2,3,3,0,cat /etc/crontab ; ls /etc/cron.d ; uname -m ; ls /etc/systemd/system ; crontab -l ; id,sweep_persistence_probe_k1
+10e2fac0498d,6,6,3.773,1.01135,0.34354340000000005,0.025569055659136093,0.364733,0,5,0,0,cat /etc/issue ; who ; ls /usr/bin ; cat /etc/group ; ls /mnt ; ls /srv,sweep_recon_k6
+e29241e5fa61,6,6,14.863,1.007753,2.1794317999999997,0.5614067141197191,2.928139,1,2,0,0,uname -m ; ls /mnt ; cat /etc/group ; who ; groups ; last,sweep_persistence_probe_k6
+fca31bfd82cb,6,6,4.005,1.007074,0.414154,0.0666182867387026,0.498098,0,4,1,0,ls /root ; groups ; ls /usr/bin ; cat /etc/shadow ; cat ~/.bash_history ; who,sweep_credential_hunt_k3
+70f450022c9f,6,6,4.332,1.012071,0.4391991999999999,0.10960182064272472,0.605775,0,4,1,0,ls /srv ; groups ; ls /opt ; echo $SHELL ; cat /etc/issue ; cat /etc/shadow,sweep_credential_hunt_k5
+439b420b2ed0,6,6,15.407,1.009751,2.2564210000000005,0.6043018597650516,3.002161,0,4,0,0,ls /etc ; date ; ls /srv ; cd /tmp ; ls /mnt ; echo $SHELL,sweep_file_explore_k4
+ef2f90f6d5b3,6,6,8.561,1.012911,1.2145346,0.23534801191597096,1.512562,0,5,0,0,pwd ; cd /home ; cd /var/log ; ls ; echo $SHELL ; ls /home,sweep_file_explore_k1
+04e3132197cc,6,6,9.402,1.006392,1.278611,0.17173122732339624,1.466867,0,4,1,0,ls -la ~ ; groups ; who ; ls ~/.ssh ; cat /etc/issue ; cat /etc/motd,sweep_credential_hunt_k4
+e814445e8239,6,6,4.216,1.015478,0.4178794,0.11450592048579845,0.602441,1,5,2,0,cat /etc/motd ; ls /opt ; history ; cat ~/.bash_history ; cat /etc/shadow ; ls ~/.ssh,sweep_credential_hunt_k2
+d150ab2606df,6,6,4.506,1.017995,0.49883359999999993,0.07190487518451026,0.588592,2,4,0,0,uname -m ; history ; ls /srv ; cat /etc/passwd ; ls /root ; ls -la ~,sweep_credential_hunt_k2
+953cdc6970fd,6,6,16.581,1.008294,2.5588172,0.20916940601746709,2.773802,0,5,0,0,cd /var/log ; cd /tmp ; cat /etc/group ; cat /etc/motd ; ls /etc ; last,sweep_file_explore_k3
+465418e04b17,6,6,4.581,1.010246,0.48572299999999996,0.10528922558600193,0.580567,1,4,3,0,crontab -l ; ls /etc/cron.d ; ls /etc/init.d ; ls /etc/systemd/system ; id ; cat /etc/crontab,sweep_persistence_probe_k0
+e096bbb25e11,6,6,9.513,1.008005,1.2590696,0.30462502324218216,1.57111,0,6,0,0,cat /etc/motd ; cd /tmp ; cd /home ; ls ; ls /opt ; ls -la,sweep_file_explore_k2
+368fea268a3d,6,6,16.729,1.004125,2.4291166,0.4650082525706399,2.83184,0,5,0,0,date ; cat /etc/os-release ; ls ; cat /etc/issue ; ls /srv ; ls /usr/bin,sweep_recon_k4
+4df94e3fea65,6,6,4.458,1.011328,0.46832139999999994,0.06382749406251195,0.546785,1,2,2,0,ls /etc/systemd/system ; last ; who ; cat /etc/rc.local ; id ; crontab -l,sweep_persistence_probe_k2
+497184ba2385,6,6,8.634,1.008569,1.1649986,0.24749604290432603,1.3764560000000001,2,3,0,0,ls /mnt ; date ; ls /srv ; hostname ; ls ; id,sweep_recon_k3
+2c36ab33f257,6,6,9.071,1.00427,1.3212612,0.27894747377185547,1.5149240000000002,2,4,0,0,cat /etc/passwd ; whoami ; cat /etc/os-release ; ls ; ls /usr/bin ; uname -r,sweep_recon_k1
+e67a5b41107a,6,6,4.498,1.005027,0.5096078,0.03948385370249465,0.537104,0,4,0,0,cat /etc/motd ; echo $SHELL ; ls /opt ; cat /etc/group ; ls /mnt ; groups,sweep_file_explore_k6
+3018b9e46509,6,6,8.011,1.009086,1.0437322,0.20956786282061476,1.344305,0,4,2,0,echo $SHELL ; cat /etc/rc.local ; cat /etc/motd ; ls /etc/cron.d ; date ; cat /etc/issue,sweep_persistence_probe_k4
+1258090edb63,6,6,8.657,1.003922,1.200494,0.3135803680757136,1.587746,2,4,0,0,cat /etc/os-release ; cat /etc/passwd ; pwd ; uname -a ; ls ; hostname,sweep_recon_k0
+f33334b4ea36,6,6,8.661,1.012282,1.2208722,0.2680533273785274,1.557245,2,4,0,0,cat /etc/passwd ; pwd ; whoami ; ls /mnt ; hostname ; ls /opt,sweep_recon_k2
+30d2d1245fcf,6,6,8.375,1.005999,1.130252,0.3068864266752441,1.5987339999999999,0,3,2,0,date ; crontab -l ; ls /etc/init.d ; cat /etc/crontab ; echo $SHELL ; ls /opt,sweep_persistence_probe_k3
+e274890b4851,6,6,15.472,1.013024,2.2800444000000004,0.4126546191033127,2.689254,1,5,0,0,cat /etc/issue ; ls /mnt ; cat /etc/motd ; uname -m ; ls /srv ; ls /opt,sweep_file_explore_k6
+bb58bb475c4e,6,6,9.803,1.006051,1.4125039999999998,0.15580016703617489,1.599501,2,4,1,0,history ; ls /root ; cat /etc/passwd ; env ; ls ~/.ssh ; ls -la ~,sweep_credential_hunt_k0
+7088c881b9f9,6,6,4.93,1.007943,0.5414168,0.10049500876013694,0.651133,4,2,0,0,whoami ; cat /etc/group ; hostname ; uname -a ; id ; cat /etc/os-release,sweep_recon_k1
+a6649c19feac,6,6,4.642,1.013779,0.5345408,0.09881618149473294,0.630543,0,4,1,0,ls /usr/bin ; ls /opt ; cat /etc/shadow ; last ; who ; cat /etc/issue,sweep_credential_hunt_k5
+09b6b6dec724,6,6,8.199,1.00677,1.0612895999999998,0.10685146070737638,1.236629,4,1,0,0,cat /etc/passwd ; who ; uname -a ; whoami ; id ; uname -r,sweep_recon_k1
+8ff2c554f9ca,6,6,8.591,1.004635,1.1556190000000002,0.2337998088899988,1.419719,0,6,0,0,ls -la ; ls /var/log ; ls ; pwd ; ls /etc ; cd /tmp,sweep_file_explore_k0
+2e160aa9ae4a,6,6,9.396,1.006375,1.3591522,0.17707067343493113,1.5564390000000001,1,3,0,0,cat /etc/group ; uname -r ; ls /usr/bin ; ls /mnt ; who ; last,sweep_recon_k5
+6fd50b1dc2b5,6,6,16.012,1.005841,2.5196952,0.47739145366009644,2.940894,1,4,0,0,cat /etc/passwd ; cat /etc/os-release ; pwd ; id ; echo $SHELL ; cat /etc/issue,sweep_recon_k2
+d6caf768fcf7,6,6,4.499,1.004804,0.47341820000000007,0.04962642694875385,0.51704,0,4,0,0,last ; ls /srv ; date ; cat /etc/group ; cat /etc/motd ; ls /usr/bin,sweep_credential_hunt_k6
+9944aabf958b,6,6,8.951,1.011149,1.2332096,0.342200591610827,1.60015,0,3,2,0,cat /etc/group ; groups ; echo $SHELL ; ls /etc/init.d ; crontab -l ; cat /etc/rc.local,sweep_persistence_probe_k3
+b0566df4fc45,6,6,9.314,1.026379,1.3033004,0.21376206134929554,1.544224,1,4,3,0,ls /etc/systemd/system ; crontab -l ; ls /etc/init.d ; ls /etc/cron.d ; id ; cat /etc/rc.local,sweep_persistence_probe_k0
+983263e89fc4,6,6,14.995,1.013421,2.2061984000000003,0.4728839827926084,2.799661,1,4,0,0,ls /opt ; uname -m ; last ; cat /etc/group ; ls /usr/bin ; pwd,sweep_file_explore_k5
+676e20b8f96c,6,6,8.634,1.006468,1.2460109999999998,0.32960995130381,1.5418129999999999,0,4,1,0,ls /etc/systemd/system ; cat /etc/group ; cat /etc/crontab ; date ; last ; ls /srv,sweep_persistence_probe_k4
+70d2828cd8f5,6,6,15.127,1.007139,2.3036456000000003,0.38786030338035377,2.694826,1,4,2,0,ls /etc/cron.d ; cat /etc/crontab ; ls /usr/bin ; ls /etc/init.d ; date ; id,sweep_persistence_probe_k2
+ed3fb95f62bd,6,6,16.066,1.017299,2.4623441999999995,0.5332455474504217,2.9231,1,4,1,0,last ; id ; cat /etc/issue ; ls /etc/cron.d ; ls /etc/systemd/system ; cat /etc/group,sweep_persistence_probe_k3
+b1fd8b9adb94,6,6,15.105,1.008647,2.2144202,0.3727959443793614,2.6739829999999998,0,4,1,0,cat /etc/group ; cat /etc/issue ; ls /usr/bin ; who ; cat /etc/rc.local ; last,sweep_persistence_probe_k5
+8824350ef9fd,6,6,9.892,1.004026,1.3587808,0.16842284267640184,1.586383,4,2,0,0,whoami ; uname -r ; cat /etc/os-release ; ls ; hostname ; uname -a,sweep_recon_k0
+620aa0be51ba,6,6,9.809,1.021467,1.3155484000000002,0.20848930545426067,1.5317150000000002,2,2,0,0,ls /opt ; date ; history ; cat /etc/passwd ; env ; who,sweep_credential_hunt_k3
+4f5a90c59603,6,6,8.811,1.006556,1.1699164,0.16214591857120547,1.37229,1,3,0,0,cat /etc/group ; last ; uname -m ; cat /etc/motd ; who ; ls /mnt,sweep_recon_k6
+db0e975bd09a,6,6,9.109,1.006372,1.3047372,0.14249301412420187,1.430873,0,4,1,0,echo $SHELL ; ls /opt ; cat /etc/group ; groups ; cat /etc/rc.local ; ls /srv,sweep_persistence_probe_k5
+0ed8e56d8dbd,6,6,8.385,1.006911,1.1653352,0.2486123010627189,1.484048,1,4,3,0,ls /etc/init.d ; ls /usr/bin ; cat /etc/rc.local ; crontab -l ; cat /etc/crontab ; id,sweep_persistence_probe_k1
+d1892cd67c8a,6,6,8.724,1.011915,1.2551663999999998,0.2506263422314183,1.577756,1,5,0,0,pwd ; uname -m ; cd /tmp ; ls /etc ; ls ; cat /etc/issue,sweep_file_explore_k2
+30235afc63ed,6,6,4.375,1.005273,0.465004,0.07970231553725399,0.552168,3,3,0,0,cat /etc/os-release ; uname -a ; pwd ; ls ; uname -r ; hostname,sweep_recon_k0
+f88a6ea4d0ed,6,6,14.834,1.020836,2.109377,0.5247779387907803,2.7193,0,5,0,0,ls /etc ; echo $SHELL ; ls /home ; ls /var/log ; cd /var/log ; pwd,sweep_file_explore_k1
+994e611b501b,6,6,15.498,1.005035,2.4647456,0.3736533686945696,2.794154,1,3,0,0,ls /srv ; ls /opt ; ls /mnt ; echo $SHELL ; groups ; uname -m,sweep_credential_hunt_k6
+59cfdd276ed1,6,6,9.316,1.005716,1.3513238,0.1992574206339629,1.5910950000000001,0,5,0,0,ls /srv ; cat /etc/motd ; ls /usr/bin ; groups ; cat /etc/issue ; ls /mnt,sweep_credential_hunt_k6
+c61f76afd73a,6,6,16.317,1.028652,2.4747190000000003,0.5225003362195091,2.938367,0,6,0,0,ls -la ; cd /tmp ; pwd ; ls /var/log ; cd /var/log ; ls /srv,sweep_file_explore_k1
+28212aaed62b,6,6,3.893,1.004936,0.376255,0.03347425388264838,0.433904,2,4,0,0,cat /etc/issue ; env ; cat ~/.bash_history ; cat /etc/group ; uname -m ; ls /usr/bin,sweep_credential_hunt_k4
+f866902c4a98,6,6,4.094,1.005126,0.4366042,0.09068786403758773,0.526802,1,4,0,0,uname -a ; cat /etc/group ; cat /etc/issue ; who ; ls /opt ; cat /etc/os-release,sweep_recon_k4
+8ee5a8928b38,6,6,12.394,1.020051,1.8189218,0.346361649813746,2.373021,1,4,0,0,ls /opt ; cat /etc/motd ; ls ; date ; cat /etc/os-release ; whoami,sweep_recon_k3
+01fd09391ee2,6,6,13.478,1.005768,2.0226774,0.3190559246006881,2.364512,1,5,2,0,cat /etc/passwd ; cat /etc/shadow ; ls /root ; env ; ls ~/.ssh ; ls -la ~,sweep_credential_hunt_k0
+55dbc8b3da62,6,6,4.101,1.016319,0.40361339999999996,0.061976552354902736,0.458518,1,1,0,0,uname -m ; who ; ls /usr/bin ; echo $SHELL ; date ; groups,sweep_recon_k6
+523738c8aa54,6,6,9.425,1.010839,1.3161961999999998,0.18811001049040427,1.560089,1,4,1,0,id ; ls /mnt ; cat /etc/crontab ; date ; cat /etc/issue ; cat /etc/group,sweep_persistence_probe_k4
+6ea036ffef4c,6,6,4.402,1.018766,0.45369079999999995,0.09062351435306401,0.555682,0,6,0,0,ls /var/log ; ls -la ; ls /home ; ls /etc ; cd /tmp ; cd /home,sweep_file_explore_k0
+b8fa1b59a23a,6,6,9.113,1.00449,1.1945546,0.2107734723009516,1.4372530000000001,0,6,0,0,pwd ; cd /var/log ; cat /etc/issue ; cd /tmp ; ls /opt ; cat /etc/motd,sweep_file_explore_k3
+891273d05c7d,6,6,9.377,1.009917,1.2418706,0.3761625816482814,1.604843,1,3,0,0,cat /etc/motd ; last ; ls /usr/bin ; date ; cat /etc/group ; uname -m,sweep_persistence_probe_k6
+e604882a3cdf,6,6,8.931,1.005686,1.2056828,0.19184487062259445,1.484365,1,4,1,0,who ; cat /etc/motd ; ls -la ~ ; env ; cat ~/.bash_history ; cat /etc/shadow,sweep_credential_hunt_k2
+4e87a3eff515,6,6,15.061,1.009658,2.1219656000000002,0.35222160119348156,2.618591,1,4,0,0,uname -r ; cat /etc/os-release ; date ; cat /etc/group ; cat /etc/motd ; cat /etc/passwd,sweep_recon_k3
+060c24630ee7,6,6,13.997,1.027517,2.1575962,0.25585381304311255,2.435072,0,4,0,0,ls /home ; ls ; last ; cat /etc/group ; cd /var/log ; echo $SHELL,sweep_file_explore_k3
+75ce716492f1,6,6,14.649,1.005539,2.072474,0.2014580477444373,2.283283,2,4,1,0,env ; history ; cat ~/.bash_history ; ls /opt ; ls -la ~ ; cat /etc/shadow,sweep_credential_hunt_k1
+51cb4542c00f,6,6,9.206,1.009914,1.2867286,0.1702765925495927,1.565269,1,5,1,0,cat /etc/passwd ; history ; cat /etc/shadow ; ls /root ; ls -la ~ ; cat ~/.bash_history,sweep_credential_hunt_k0
+860e0b5608e1,6,6,16.856,1.014235,2.462949,0.6730954453244354,2.981299,1,4,2,0,ls /etc/systemd/system ; uname -m ; crontab -l ; ls /srv ; ls /etc/init.d ; cat /etc/rc.local,sweep_persistence_probe_k2
+bf82a0cbe9af,6,6,14.484,1.004462,2.2178806,0.47441005990103113,2.869776,1,3,1,0,who ; cat /etc/issue ; ls /usr/bin ; last ; uname -m ; ls /etc/cron.d,sweep_persistence_probe_k5
+ebcf607fdc00,6,6,4.139,1.006322,0.431503,0.07360368950331228,0.512017,1,4,0,0,uname -m ; cat /etc/os-release ; cat /etc/motd ; cat /etc/group ; ls /usr/bin ; echo $SHELL,sweep_recon_k5
+40859164617d,6,6,13.589,1.006132,1.9456174000000002,0.343758314430793,2.342894,0,4,0,0,ls /etc ; groups ; cd /var/log ; ls -la ; pwd ; date,sweep_file_explore_k2
+642e60fcbebb,6,6,4.046,1.009045,0.4135674,0.07479353454544051,0.521657,1,4,0,0,cat /etc/issue ; ls /mnt ; whoami ; ls /srv ; cat /etc/group ; date,sweep_recon_k5
+bcee96bf9edc,6,6,8.573,1.009055,1.1747451999999998,0.09535008823907824,1.283547,0,5,0,0,cat /etc/motd ; cat /etc/group ; groups ; ls /home ; ls /usr/bin ; ls /opt,sweep_file_explore_k5
+76585ff466e3,6,6,16.554,1.026302,2.4891739999999998,0.34291475809375727,2.856665,1,3,0,0,date ; ls /etc ; ls -la ; groups ; uname -m ; cat /etc/motd,sweep_file_explore_k4
+d5b603e3f3c9,6,6,4.277,1.020363,0.4483216,0.08463676900319389,0.555996,0,5,1,0,cat /etc/issue ; ls -la ~ ; cat /etc/group ; cat ~/.bash_history ; ls ~/.ssh ; echo $SHELL,sweep_credential_hunt_k3
